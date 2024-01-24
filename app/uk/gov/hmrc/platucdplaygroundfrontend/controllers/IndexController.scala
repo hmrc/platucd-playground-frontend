@@ -14,14 +14,22 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.platucdplaygroundfrontend.config
+package uk.gov.hmrc.platucdplaygroundfrontend.controllers
 
-import com.google.inject.AbstractModule
+import uk.gov.hmrc.platucdplaygroundfrontend.views.html.IndexPage
+import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
+import play.api.mvc.{Action, AnyContent, MessagesControllerComponents}
+import javax.inject.{Inject, Singleton}
+import scala.concurrent.Future
 
-class Module extends AbstractModule {
+@Singleton
+class IndexController @Inject()(
+  mcc: MessagesControllerComponents,
+  indexPage: IndexPage)
+    extends FrontendController(mcc) {
 
-  override def configure(): Unit = {
-
-    bind(classOf[AppConfig]).asEagerSingleton()
+  val index: Action[AnyContent] = Action.async { implicit request =>
+    Future.successful(Ok(indexPage()))
   }
+
 }
