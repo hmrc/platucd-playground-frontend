@@ -1,7 +1,7 @@
 
 # platucd-playground-frontend
 
-This is a placeholder README.md for a new repository
+Playground for the PlatUCD team to test platform functionality from the catalogue.
 
 ### License
 

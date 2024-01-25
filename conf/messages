@@ -1,2 +1,2 @@
-service.name = platucd-playground-frontend
-service.text = This is your new service
+service.name = PlatUCD demo frontend
+service.text = If you are not expecting to see this microservice contact team platucd or platops
