@@ -18,8 +18,8 @@
 
 @()(implicit request: Request[_], messages: Messages)
 
-@layout(pageTitle = Some("platucd-playground-frontend")) {
-    <h1 class="govuk-heading-xl">platucd-playground-frontend</h1>
+@layout(pageTitle = Some(messages("service.name"))) {
+    <h1 class="govuk-heading-xl">@{messages("service.name")}</h1>
     <p class="govuk-body">@{messages("service.text")}</p>
 }
 
