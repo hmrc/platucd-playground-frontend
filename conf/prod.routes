@@ -1,3 +1,3 @@
 # Add all the application routes to the app.routes file
-->         /platucd-playground-frontend              app.Routes
-->         /                          health.Routes
+->         /platucd-playground              app.Routes
+->         /                                health.Routes
